@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import logo from "../../assets/logo_white.png";
+import menu from "../../assets/menu-icon-white.png"
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
                 </Link>
             </div>
             <div className="nav-menu">
-                
+                <a href="#">
+                    <img src={menu} alt="menu" />
+                </a>
             </div>
         </nav>
     );
