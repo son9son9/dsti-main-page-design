@@ -43,7 +43,7 @@ const Home = () => {
                     <div className="bottom-padding"></div>
                 </div>
             </section>
-            <section className="section2">
+            <section id="section2">
             </section>
         </div>
     );

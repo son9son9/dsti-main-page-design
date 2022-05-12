@@ -12,11 +12,11 @@ const Header = () => {
                     <img src={logo} alt="DSTI" />
                 </Link>
             </div>
-            <div className="nav-menu">
+            {/* <div className="nav-menu">
                 <a href="#">
                     <img src={menu} alt="menu" />
                 </a>
-            </div>
+            </div> */}
         </nav>
     );
 }
