@@ -101,7 +101,7 @@ html {
     color: #FFFFFF;
     text-align: left;
     text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
-    font-size: 1.6em;
+    font-size: 1.4em;
 
     position: absolute;
     left: 20vw;
@@ -123,11 +123,11 @@ html {
 @keyframes right-fade-in {
     0% {
         opacity: 0;
-        left: 20vw;
+        left: 12vw;
     }
     100% {
         opacity: 1;
-        left: 24vw;
+        left: 20vw;
     }
 }
 
