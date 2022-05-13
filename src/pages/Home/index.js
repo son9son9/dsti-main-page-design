@@ -12,27 +12,22 @@ const Home = () => {
 
     return (
         <div className="home">
-            <section className="section1">
+            <section className="section1 sec1-bg">
                 <div className="text-content">
-                    <h1>FIRST CONTENT</h1>
-                    <p>Second Content <br />Third Content</p>
-                    <button className="scroll-button">
-                        <img src={blueArrow} alt="scroll_down" />
-                    </button>
+                    <h1>DSTI만의 IT 솔루션</h1>
+                    <p>저희는 다양한 비즈니스를 업계 최고의 기술력으로 제공합니다. <br />어떤 일들을 하는지 궁금하지 않으신가요?</p>
                 </div>
+                <a href="#section2">
+                    <div className="scroll-button" />
+                </a>
                 {/* <div>
                     <img src={mainImage} className="main-img" alt="mainImage" />
                 </div> */}
-                <div>
+                {/* <div>
                     <img src={mainImage2} className="main-img2" alt="mainImage" />
-                </div>
+                </div> */}
                 {/* <div>
                     <img src={subImage} className="sub-img" alt="subImage" />
-                </div> */}
-                {/* <div className="custom-shape-divider-bottom-1652227813">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
-                    </svg>
                 </div> */}
                 <div className="custom-shape-divider-bottom-1652236878">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
