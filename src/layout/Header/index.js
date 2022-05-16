@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 import logo from "../../assets/logo_white.png";
-import menu from "../../assets/menu-icon-white.png"
 import { Link } from "react-router-dom";
+import NavButton from "../NavButton";
 
 const Header = () => {
     return(
@@ -12,11 +12,7 @@ const Header = () => {
                     <img src={logo} alt="DSTI" />
                 </Link>
             </div>
-            {/* <div className="nav-menu">
-                <a href="#">
-                    <img src={menu} alt="menu" />
-                </a>
-            </div> */}
+            <NavButton />
         </nav>
     );
 }

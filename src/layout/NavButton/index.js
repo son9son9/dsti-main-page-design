@@ -1,14 +1,14 @@
 import './style.css';
-import menu from "../../assets/menu_icon_black.png"
+import menu from "../../assets/menu_icon_white.png"
 
 const NavButton = () => {
+    let menuToggle = true;
+
     const handleNavButton = () => {
         let menuBox = document.querySelector(".menu-box");
-        if (menuBox.style.display === 'none') {
-            menuBox.style.display = 'block';
-        } else {
-            menuBox.style.display = 'none';
-        }
+
+        menuBox.classList.toggle('menu-disappear-animation');
+        menuBox.classList.toggle('menu-appear-animation');
     };
 
     return (
@@ -16,7 +16,7 @@ const NavButton = () => {
             <div className='nav-button' onClick={ handleNavButton }>
                 <img src={menu} alt="menu"></img>
             </div>
-            <div className='menu-box'>
+            <div className='menu-box menu-appear-animation'>
                 <ul className='menu-list'>
                     <li>
                         DSTI 소개

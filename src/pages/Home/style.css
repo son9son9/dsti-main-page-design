@@ -29,8 +29,21 @@ html {
     background-size: contain;
 }
 
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: none;
+    display: grid;
+
+    /* border: 1px solid #000000; */
+
+    position: relative;
+    top: 0;
+
+    height: 200%;
+}
+
 #section2 {
-    z-index: 0;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -103,9 +116,9 @@ html {
     text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     font-size: 1.4em;
 
-    position: absolute;
-    left: 20vw;
-    top: 32vh;
+    position: relative;
+    left: 0;
+    top: 34vh;
 
     animation-name: right-fade-in;
     animation-duration: 1s;
@@ -123,11 +136,11 @@ html {
 @keyframes right-fade-in {
     0% {
         opacity: 0;
-        left: 12vw;
+        left: 6vw;
     }
     100% {
         opacity: 1;
-        left: 20vw;
+        left: 0;
     }
 }
 

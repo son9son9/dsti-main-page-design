@@ -10,59 +10,82 @@
     height: 50px;
 
     position: fixed;
-    top: 10vh;
-    right: 1.5vw;
+    top: 1vh;
+    right: 10.5vw;
     
-    background-color: #ffffff;
+    background: none;
     display: flex;
     align-items: center;
     align-content: center;
 
     border-radius: 45%;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
-
+    /* box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2); */
     cursor: pointer;
+}
+.nav-button:hover {
+    animation: hover-bgcolor-change 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes hover-bgcolor-change {
+    from {
+        background: none;
+    }
+    to {
+        background: rgba(0, 0, 0, 0.1);
+    }
 }
 .nav-button img {
     width: 30px;
     height: 30px;
     position: absolute;
     left: 20%;
+
+    /* cursor: pointer; */
+
+    filter: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.6));
 }
 
 .menu-box {
-    z-index: 1;
-    width: 240px;
-    height: 560px;
+    /* z-index: 1; */
+    width: 260px;
+    height: 100vh;
 
     position: fixed;
-    top: 17vh;
-    right: 1.5vw;
+    top: 0;
+    right: 0;
 
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 
-    border-radius: 30px;
+    /* border-radius: 30px; */
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
-
-    display: none;
+}
+.menu-appear-animation {
+    animation: right-appear 0.3s ease;
+    animation-fill-mode: forwards;
+}
+.menu-disappear-animation {
+    animation: right-disappear 0.3s ease;
+    animation-fill-mode: forwards;
 }
 
 .menu-list {
     position: absolute;
-    right: 20px;
-    width: 100px;
-    margin: 40px;
-    padding-right: 20px;
-    list-style-type: none;
+    top: 60px;
+    left: -16px;
+    right: 0;
+    width: fit-content;
+    padding-right: 0;
+
+    list-style: none;
     font-size: 1.1em;
 }
 .menu-list li {
     width: fit-content;
-    margin-top: 36px;
+    margin-top: 0;
     margin-bottom: 30px;
-    padding-left: 10px;
-    /* padding-bottom: 4px; */
+    padding-left: 8px;
+
     cursor: pointer;
 }
 .menu-list li:nth-child(2) {
@@ -86,5 +109,21 @@
     }
     to {
         opacity: 0;
+    }
+}
+@keyframes right-appear {
+    from {
+        right: -16vw;
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes right-disappear {
+    from {
+        right: 0;
+    }
+    to {
+        right: -16vw;
     }
 }
