@@ -6,6 +6,7 @@ import mainImage2 from "../../assets/it_solution01.jpg"
 import blueArrow from "../../assets/blue_arrow.png"
 import subImage from "../../assets/business_people.png"
 import BusinessList from "../../components/BusinessList";
+import Button from "../../components/Button";
 
 var rellax = new Rellax('.rellax');
 
@@ -17,8 +18,9 @@ const Home = () => {
                 <div className="container">
                     <div className="text-content">
                         <h1>DSTI만의 IT 솔루션</h1>
-                        <p>저희는 다양한 비즈니스를 업계 최고의 기술력으로 제공합니다. <br />어떤 일들을 하는지 궁금하지 않으신가요?</p>
+                        <p>저희는 다양한 비즈니스를 업계 최고의 기술력으로 제공합니다.<br />어떤 일들을 하는지 궁금하지 않으신가요?</p>
                     </div>
+                    <Button />
                     <a href="#section2">
                         <div className="scroll-button" />
                     </a>

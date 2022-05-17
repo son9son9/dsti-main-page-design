@@ -39,26 +39,25 @@
     height: 30px;
     position: absolute;
     left: 20%;
+    filter: invert(1);
 
-    /* cursor: pointer; */
-
-    filter: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.6));
+    /* filter: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.6)); */
 }
 
 .menu-box {
     /* z-index: 1; */
-    width: 260px;
+    /* width: 260px; */
+    width: 14vw;
     height: 100vh;
 
     position: fixed;
     top: 0;
     right: 0;
 
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(163, 172, 189, 0.1);
     backdrop-filter: blur(4px);
 
-    /* border-radius: 30px; */
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 .menu-appear-animation {
     animation: right-appear 0.3s ease;
@@ -81,18 +80,22 @@
     font-size: 1.1em;
 }
 .menu-list li {
-    color: white;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+    /* color: #F5F9FF; */
+    color: black;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
     width: fit-content;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 40px;
-    padding-left: 12px;
+    padding-left: 20px;
 
     cursor: pointer;
 }
 .menu-list li:hover {
-    padding-left: 8px;
+    color: #0067C4;
+    padding-left: 16px;
     border-left: 4px solid #0067C4;
+
+    animation: fade-in 0.1s ease;
 }
 
 @keyframes fade-in {
@@ -113,7 +116,7 @@
 }
 @keyframes right-appear {
     from {
-        right: -16vw;
+        right: -32vw;
     }
     to {
         right: 0;
@@ -124,6 +127,6 @@
         right: 0;
     }
     to {
-        right: -16vw;
+        right: -32vw;
     }
 }
